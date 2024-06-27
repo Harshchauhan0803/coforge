@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+
+            margin-left: 350pt;
+
+            margin-top: 100pt;
+
+            border: solid;
+
+            width: 30%;
+
+            padding: 20px;
+
+            background-color: darkred;
+
+        }
+
+        label {
+
+            width: 100pt;
+
+            float: left;
+
+        }
+
+        input{
+
+            width: 110pt;
+
+            margin-top: 4px;
+
+        }
+
+        input[type="submit"]{
+
+            margin-top: 5pt;
+
+            width: 40pt;
+
+        }
+
+        input[type="reset"]{
+
+            width: 50pt;
+
+        }
+    </style>
+</head>
+<body>
+<form action="EmployeeServlet" method="post">
+    <div>
+        <label>Enter Id</label>
+            <input name="id">
+    </div>
+    <div>
+        <label>Enter Password</label>
+            <input name="pass" type="password">
+    </div>
+    <div>
+        <label>Enter Name</label>
+            <input name="name" type="text">
+    </div>
+    <div>
+            <input type="Submit">
+        <input type="Reset">
+
+
+    </div>
+    </form>
+</body>
+</html>

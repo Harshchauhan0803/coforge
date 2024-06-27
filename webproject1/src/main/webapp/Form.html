@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Form Example</title>
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    form {
+
+      max-width: 400px;
+
+      margin: 20px auto;
+
+      padding: 20px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 5px;
+
+      background-color: #f9f9f9;
+
+    }
+
+    label {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      font-weight: bold;
+
+    }
+
+    input[type="text"],
+
+    input[type="number"],
+
+    input[type="submit"],
+
+    input[list] {
+
+      width: 100%;
+
+      padding: 8px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 4px;
+
+      box-sizing: border-box;
+
+      margin-bottom: 10px;
+
+    }
+
+    input[type="submit"] {
+
+      background-color: #4CAF50;
+
+      color: white;
+
+      border: none;
+
+      cursor: pointer;
+
+    }
+
+    input[type="submit"]:hover {
+
+      background-color: #45a049;
+
+    }
+    body{
+        background-image: url(https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: inherit;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <form>
+
+    <div>
+
+      <label for="id">Enter ID:</label>
+
+      <input type="text" id="id" name="id" required>
+
+    </div>
+
+    <div>
+
+      <label for="name">Enter Name:</label>
+
+      <input type="text" id="name" name="name" required>
+
+    </div>
+
+    <div>
+
+      <label for="age">Enter Age:</label>
+
+      <input type="number" id="age" name="age" required>
+
+    </div>
+
+    <div>
+
+      <label for="address">Enter Address:</label>
+
+      <input type="text" id="address" name="address" required>
+
+    </div>
+
+    <div>
+
+      <label for="city">Select City:</label>
+
+      <input list="cities" id="city" name="city">
+
+      <datalist id="cities">
+
+        <option>Delhi</option>
+
+        <option>Faridabad</option>
+
+        <option>Mumbai</option>
+
+        <option>Hyderabad</option>
+
+        <option>Bangalore</option>
+
+      </datalist>
+
+    </div>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <form>
+
+    <label >Enter no1:</label>
+
+    <input type="number" id="a" value="10" oninput="result.value=parseFloat(a.value)+parseFloat(b.value)">
+
+    <label >Enter no2:</label>
+
+    <input type="number" id="b" value="20" oninput="result.value=parseFloat(a.value)+parseFloat(b.value)">
+
+    <div>
+
+      <label>Result:</label>
+
+      <output id="result" name="result" for="a b">30</output>
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

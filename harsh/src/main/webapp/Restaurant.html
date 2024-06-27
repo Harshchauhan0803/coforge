@@ -1,0 +1,77 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Title</title>
+
+        <style> @import url('css/style1.css')</style>
+
+    </head>
+
+    <style>
+
+        form{
+
+            height:200px;
+
+            background-color:maroon;
+        }
+
+        body{
+            background-color:wheat;
+        }
+
+    </style>
+
+    <body>
+
+    <form action="FoodController" onsubmit="return validate()" method="post">
+
+        <div><label >Enter id</label>
+
+            <input name ="id"></div>
+
+        <div><label >Enter Password</label>
+
+            <input name ="pass" type="password"></div>
+
+        <div style="margin-top:20pt; border:solid; padding:5pt; border-radius:10pt"><label >select food item</label>
+
+            <div><input name ="type" type="radio" value =nindian>North Indian</div>
+
+            <div><input name ="type" type="radio" value =sindian>South Indian</div>
+
+            <div><input name ="type" type="radio" value =chinese>Chinese</div>
+
+        </div>
+
+        <div style="margin-top:20pt">
+
+            <button type="submit">Send</button>
+
+            <button type="reset">Cancel</button>
+
+        </div>
+
+    </form>
+
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+
+
